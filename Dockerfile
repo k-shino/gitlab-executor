@@ -10,4 +10,5 @@ RUN curl -o /usr/local/bin/aws-iam-authenticator https://amazon-eks.s3-us-west-2
 RUN chmod +x /usr/local/bin/aws-iam-authenticator
 RUN wget -O /usr/bin/yq https://github.com/mikefarah/yq/releases/download/2.4.1/yq_linux_amd64
 RUN chmod +x /usr/bin/yq
-
+RUN sudo apk add bash bash-completion
+RUN chsh -s /bin/bash
